@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- css -->
+    <!-- font-aweaome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- xeicon -->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- js연동 -->
+    <script src="js/html5shiv.js"></script>
+    <!-- css3 적용 -->
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="js/respond.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>과일팜</title>
+  </head>
+  <body>
+    <!-- 모달 팝업 -->
+
+    <div class="popup-wrap" id="popup">
+      <div class="popup">
+        <div class="popup-body">
+          <img src="images/modal-web.jpg" alt="모달창" />
+        </div>
+        <div class="popup-foot">
+          <span class="pop-btn close" id="close">다시 보지 않기</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 전체 레이아웃 -->
+    <div class="wrap">
+      <!-- top button -->
+      <ul class="icon">
+        <li><i class="fas fa-heart"></i></li>
+        <li><i class="fas fa-headset"></i></li>
+        <li><i class="fas fa-arrow-up" id="scroll-to-top"></i></li>
+      </ul>
+      <div class="scroll-to-top" id="scroll-to-top-btn">
+        <i class="fas fa-arrow-up"></i>
+      </div>
+
+      <!-- 상단 -->
+      <header>
+        <div class="inner">
+          <div class="header-top">
+            <div class="header-search">
+              <input
+                type="text"
+                class="search-text"
+                maxlength="100"
+                placeholder="과일은 과일팜"
+              />
+              <img src="images/search.png" alt="검색" />
+            </div>
+            <ul class="header-menu-icon">
+              <li class="search">
+                <a href="#"><img src="images/search.png" alt="" /></a>
+              </li>
+              <li class="user">
+                <a href="#"><img src="images/user-alt.png" alt="" /></a>
+              </li>
+              <li class="basket">
+                <a href="#"><img src="images/shopping-basket.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-md">
+            <div class="header-logo">
+              <a href="index.html"><img src="images/logo.jpg" alt="로고" /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="header-bottom">
+        <ul class="main-menu">
+          <li>
+            <a href="#"><i class="fas fa-bars"></i>ALL</a>
+          </li>
+          <li>
+            <a href="#">도시락 <br />Farm</a>
+          </li>
+          <li>
+            <a href="#">국산<br />Farm</a>
+          </li>
+          <li>
+            <a href="#">제철<br />Farm</a>
+          </li>
+          <li>
+            <a href="#">선물세트<br />Farm</a>
+          </li>
+          <li>
+            <a href="#">정기배송<br />Farm</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 이미지 슬라이드 -->
+      <div class="banner">
+        <div class="swiper sw-banner">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/longbanner-sul1.png"
+                alt="배너"
+                class="banner-1"
+              />
+              <img
+                src="images/banner-2_1440px.png"
+                alt="배너"
+                class="banner-2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/longbanner-dosirak.png"
+                alt="배너"
+                class="banner-1"
+              />
+              <img
+                src="images/banner-dosirak.png"
+                alt="배너"
+                class="banner-2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/longbanner-manggo.png"
+                alt="배너"
+                class="banner-1"
+              />
+              <img src="images/banner-manggo.png" alt="배너" class="banner-2" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/longbanner-tomato.png"
+                alt="배너"
+                class="banner-1"
+              />
+              <img src="images/banner-tomato.png" alt="배너" class="banner-2" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- 오늘의 도시락 -->
+      <section class="today">
+        <div class="inner">
+          <h1>오늘의 도시락 Pick!</h1>
+          <!-- <h2>과육만 깔끔하게 먹는 맛있는 컷팅 과일도시락</h2> -->
+          <div class="today-wrap">
+            <ul class="today-menu">
+              <li>
+                <a href="#">
+                  <img src="images/kiwi.jpg" alt="키위" />
+                  <i class="fas fa-check"></i>
+                  <p>키위</p>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/orange.jpg" alt="오렌지" />
+                  <i class="fas fa-check"></i>
+                  <p>오렌지</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/banana.jpg" alt="바나나" />
+                  <i class="fas fa-check"></i>
+                  <p>바나나</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/melon.jpg" alt="멜론" />
+                  <i class="fas fa-check"></i>
+                  <p>멜론</p></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="images/mango.jpg" alt="망고" />
+                  <i class="fas fa-check"></i>
+                  <p>망고</p></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="today-bt">
+            <button class="today-bt-left">바로 주문</button>
+            <button class="today-bt-right">과일 선택하기</button>
+          </div>
+        </div>
+      </section>
+      <!-- 할인특가 -->
+      <section class="sale">
+        <div class="inner">
+          <div class="sale-left">
+            <h1>오늘만 할인</h1>
+            <hr />
+            <p>
+              가격 인하 과일을 <br class="sale-br" />
+              오늘 바로 배송해드립니다 !
+            </p>
+            <div class="sale-button">
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+              <div class="swiper-button-prev">
+                <i class="fas fa-arrow-left"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper sw-sale">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/durian.jpg" alt="두리안" />
+                  <div class="sale-txt">
+                    <h2>태국산 두리안</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/pineapple_4.jpg" alt="파인애플" />
+                  <div class="sale-txt">
+                    <h2>고당도 골드파인애플</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/drangon fruit.jpg" alt="용과" />
+                  <div class="sale-txt">
+                    <h2>백용과 레드용과</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/mangostin.jpg" alt="망고스틴" />
+                  <div class="sale-txt">
+                    <h2>태국산 망고스틴</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="images/sukryu.jpg" alt="석류" />
+                  <div class="sale-txt">
+                    <h2>미국산 석류</h2>
+                    <div class="sale-price">
+                      <p>50%</p>
+                      <p>5,000원</p>
+                      <p>10,000원</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BEST -->
+      <section class="best">
+        <div class="inner">
+          <h1>BEST</h1>
+          <ul class="best-button">
+            <li><a href="#">실시간 인기</a></li>
+            <li><a href="#">이달의 특가</a></li>
+            <li><a href="#">선물 맛집</a></li>
+            <li><a href="#">팜 추천</a></li>
+          </ul>
+          <ul class="best-fruits">
+            <li>
+              <a href="#">
+                <div class="best-img">
+                  <img src="images/strawberry_4.jpg" alt="딸기" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>킹스베리 딸기 1팩</h3>
+                <div class="best-price">
+                  <p>10,000원</p>
+                  <p>5,000원</p>
+                  <p class="best-new">NEW</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="best-img">
+                  <img src="images/apple_3.jpg" alt="사과" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>홍옥 꿀사과 1box</h3>
+                <div class="best-price">
+                  <p>12,000원</p>
+                  <p>6,000원</p>
+                  <p class="best-recommend">추천</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="best-img">
+                  <img src="images/watermelon.jpg" alt="수박" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>고당도 꿀수박 1통</h3>
+                <div class="best-price">
+                  <p>14,000원</p>
+                  <p>7,000원</p>
+                  <p class="best-new">NEW</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="best-img">
+                  <img src="images/mango_4.jpg" alt="망고" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>태국 골드망고 1box</h3>
+                <div class="best-price">
+                  <p>16,000원</p>
+                  <p>8,000원</p>
+                  <p class="best-recommend">추천</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="best-img">
+                  <img src="images/avocado.jpg" alt="아보카도" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>칠레 아보카도 1box</h3>
+                <div class="best-price">
+                  <p>16,000원</p>
+                  <p>8,000원</p>
+                  <p class="best-new">NEW</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button class="best-more">+ MORE</button>
+        </div>
+      </section>
+      <!-- 제철 과일 -->
+      <section class="new">
+        <div class="inner">
+          <h1>NEW! 제철 과일</h1>
+          <ul class="new-fruits">
+            <li>
+              <a href="/detailspage.html">
+                <div class="new-img">
+                  <img src="images/mandarin.jpg" alt="귤" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>제주감귤 1box</h3>
+                <div class="new-price">
+                  <p>50%</p>
+                  <p>5,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="new-img">
+                  <img src="images/grape3.jpg" alt="샤인머스켓" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>샤인머스켓 1kg</h3>
+                <div class="new-price">
+                  <p>30%</p>
+                  <p>7,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="new-img">
+                  <img src="images/strawberry_3.jpg" alt="딸기" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>충청논산 딸기 1팩</h3>
+                <div class="new-price">
+                  <p>10%</p>
+                  <p>9,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/detailspage.html">
+                <div class="new-img">
+                  <img src="images/tomato.jpg" alt=토마토" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>짭짤이토마토 1kg</h3>
+                <div class="new-price">
+                  <p>50%</p>
+                  <p>5,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="new-img">
+                  <img src="images/grapefruits.jpg" alt="자몽" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>루비 레드자몽 1kg</h3>
+                <div class="new-price">
+                  <p>30%</p>
+                  <p>7,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="/detailspage.html">
+                <div class="new-img">
+                  <img src="images/peach_3.jpg" alt="복숭아" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>납작복숭아 1kg</h3>
+                <div class="new-price">
+                  <p>50%</p>
+                  <p>5,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="new-img">
+                  <img src="images/fig.jpg" alt="무화과" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>제주 무화과 1팩</h3>
+                <div class="new-price">
+                  <p>30%</p>
+                  <p>7,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="new-img">
+                  <img src="images/koreanmelon.jpg" alt="참외" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>성주 꿀참외 1kg</h3>
+                <div class="new-price">
+                  <p>10%</p>
+                  <p>9,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="new-img">
+                  <img src="images/passionfruits.jpg" alt="패션후르츠" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>패션후르츠 1kg</h3>
+                <div class="new-price">
+                  <p>10%</p>
+                  <p>9,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="new-img">
+                  <img src="images/pear.jpg" alt="배" />
+                  <span
+                    ><a href="#"
+                      ><img src="images/cart.png" alt="장바구니담기" /></a
+                  ></span>
+                </div>
+                <h3>나주 꿀배 1box</h3>
+                <div class="new-price">
+                  <p>10%</p>
+                  <p>9,000원</p>
+                  <p>10,000원</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button class="new-more">+ MORE</button>
+        </div>
+      </section>
+      <!-- 생생후기 -->
+      <div class="reviewpage">
+        <div class="inner">
+          <h1>생생 후기</h1>
+          <ul class="review-list">
+            <li class="review">
+              <img src="/images/review4.jpg" alt="리뷰이미지" />
+              <div class="review-right">
+                <h2>애기가 잘먹어요</h2>
+                <p class="star">
+                  <i class="fas fa-star" style="color: #ffd43b"></i> 4.5/5
+                </p>
+                <span>잘먹엇습니당 애기가 좋아해요</span>
+                <p class="id">kkk***</p>
+              </div>
+            </li>
+            <li class="review">
+              <img src="/images/review3.jpg" alt="리뷰이미지" />
+              <div class="review-right">
+                <h2>3번째 재구매!</h2>
+                <p class="star">
+                  <i class="fas fa-star" style="color: #ffd43b"></i> 5/5
+                </p>
+                <span>항상 여기서만 주문합니다</span>
+                <p class="id">hihi***</p>
+              </div>
+            </li>
+          </ul>
+          <ul class="review-list">
+            <li class="review">
+              <img src="/images/review1.jpg" alt="리뷰이미지" />
+              <div class="review-right">
+                <h2>크기가 작아 좀 아쉬워요</h2>
+                <p class="star">
+                  <i class="fas fa-star" style="color: #ffd43b"></i> 4/5
+                </p>
+                <span> 생각보다 작지만 맛있어요</span>
+                <p class="id">zzz***</p>
+              </div>
+            </li>
+            <li class="review">
+              <img src="/images/review2.jpg" alt="리뷰이미지" />
+              <div class="review-right">
+                <h2>믿고 사는 과일팜</h2>
+                <p class="star">
+                  <i class="fas fa-star" style="color: #ffd43b"></i> 4.5/5
+                </p>
+                <span
+                  >상품이 좋아서 여러곳 검색하지 않고 <br />구입할수 있어서 넘
+                  좋아요~</span
+                >
+                <p class="id">hoho***</p>
+              </div>
+            </li>
+          </ul>
+          <button class="review-more">+ MORE</button>
+          <!-- 브랜드 스토리 -->
+        </div>
+      </div>
+      <section class="brand_story">
+        <!-- <img src="images/banner-brand.jpg" alt="브랜드스토리">
+          <img src="images/banner-brand2.jpg" alt="브랜드스토리">
+          <img src="images/banner-brand3.jpg" alt="브랜드스토리"> -->
+        <p><a href="/brandstory.html">자세히 보기</a></p>
+      </section>
+      <!-- 하단 -->
+      <footer>
+        <div class="ft-left">
+          <img src="images/logo-2.png" alt="로고" />
+        </div>
+        <div class="ft-right">
+          <ul class="ft-right-top">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">이용안내</a></li>
+          </ul>
+          <div class="ft-right-bottom">
+            <h4>고객센터 문의</h4>
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                style="fill: rgb(0, 107, 0)"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                />
+              </svg>
+              1234-5678</span
+            >
+            <p>평일 09:00 - 18:00 (토/일, 공휴일 휴무)</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

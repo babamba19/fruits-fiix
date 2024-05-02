@@ -1,0 +1,934 @@
+@charset "uft-8";
+@media screen and (max-width: 1360px) {
+  .swiper-slide img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  /* 생생 후기 */
+  .star {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* 후기 */
+  .star {
+    font-size: 1rem;
+  }
+  .review-right .id {
+    font-size: 0.8rem;
+  }
+  /* 할인 */
+  .sale-left .swiper-pagination {
+    bottom: 34px;
+  }
+  .sale-price p:nth-child(1) {
+    font-size: 1.3rem;
+  }
+  .sale-price p:nth-child(2) {
+    font-size: 1.3rem;
+  }
+  .sale-price p:nth-child(3) {
+    font-size: 0.8rem;
+  }
+  .best-fruits li h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  .best-price p:nth-child(1) {
+    font-size: 0.9rem;
+  }
+  .best-price p:nth-child(2) {
+    font-size: 1.1rem;
+  }
+  .best-new,
+  .best-recommend {
+    width: 35px;
+    line-height: 18px;
+    font-size: 0.7rem;
+  }
+  .new-fruits li h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  .new-price p:nth-child(1) {
+    font-size: 1.1rem;
+  }
+  .new-price p:nth-child(2) {
+    font-size: 1.1rem;
+  }
+  .new-price p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+  .brand_story p a {
+    left: 45.7%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  /* 생생 후기 */
+  .review img {
+    width: 40%;
+    padding: 20px;
+  }
+  .review-right {
+    padding: 20px 0;
+  }
+  .review-right h2 {
+    font-family: "TheJamsil4Medium";
+    font-size: 1.2rem;
+  }
+  .star {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  /* 생생 후기 */
+  .review-right span {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* 할인 */
+  .sale-left p {
+    font-size: 1.1rem;
+  }
+  .sale-left .swiper-pagination {
+    bottom: 18px;
+  }
+  .sw-sale {
+    width: 65%;
+  }
+  .sale-txt {
+    padding: 50px 15px;
+  }
+  .sale-price p:nth-child(1) {
+    font-size: 1.1rem;
+  }
+  .sale-price p:nth-child(2) {
+    font-size: 1.1rem;
+  }
+  .sale-price p:nth-child(3) {
+    font-size: 0.75rem;
+  }
+  /* best */
+  .best-fruits li h3 {
+    font-size: 0.95rem;
+    margin-left: 5px;
+  }
+  .best-price {
+    margin-left: 5px;
+  }
+  .best-price p:nth-child(1) {
+    font-size: 0.8rem;
+  }
+  .best-price p:nth-child(2) {
+    font-size: 1rem;
+    margin-left: 5px;
+  }
+  .best-new,
+  .best-recommend {
+    width: 30px;
+    line-height: 15px;
+    font-size: 0.6rem;
+    margin-left: 5px;
+  }
+  /* new */
+  .new-fruits li h3 {
+    font-size: 0.95rem;
+    margin-left: 5px;
+  }
+  .new-price {
+    margin-left: 5px;
+  }
+  .new-price p:nth-child(1) {
+    font-size: 1rem;
+  }
+  .new-price p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .new-price p:nth-child(3) {
+    font-size: 0.8rem;
+  }
+  /* 생생 후기 */
+  .reviewpage {
+    height: 670px;
+  }
+  /* 브랜드스토리 */
+  .brand_story p a {
+    left: 45.7%;
+  }
+  /* 상세페이지 */
+  .menu-right-info li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height: 80px;
+  }
+  .menu-right li h2 {
+    color: #707070;
+    font-size: 20px;
+    width: 130px;
+  }
+  .menu-right-info li b {
+    /* position: absolute;
+  right: 100px; */
+    color: #222;
+    font-weight: 600;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* 생생 후기 */
+  .star {
+    font-size: 0.9rem;
+    margin: 5px 0;
+  }
+  .review-right .id {
+    margin-top: 5px;
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* 공통 */
+  .inner {
+    width: 90%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  /* 아이콘 */
+  .icon {
+    right: 10px;
+  }
+  .icon li {
+    width: 45px;
+    height: 45px;
+  }
+  .icon li i {
+    font-size: 20px;
+  }
+  /* 헤더 */
+  .header-top {
+    margin-top: 25px;
+  }
+  .search {
+    display: flex;
+  }
+  .header-search {
+    display: none;
+  }
+  .header-top {
+    justify-content: flex-end;
+  }
+  .header-menu-icon {
+    width: 150px;
+    gap: 25px;
+  }
+  .header-menu-icon img {
+    width: 20px;
+    height: 20px;
+  }
+  .header-logo a img {
+    max-width: 200px;
+  }
+  .header-bottom {
+    height: 60px;
+    margin: 40px 0 0 0;
+  }
+  .main-menu {
+    width: 90%;
+    margin: 0 auto;
+    /* margin-top: 20px; */
+    font-size: 0.8rem;
+  }
+  /* 슬라이드 배너 */
+  .banner {
+    /* margin-top: 227px; */
+  }
+  .banner-1 {
+    display: none;
+  }
+  .banner-2 {
+    display: block;
+  }
+  /* 오늘의 도시락 */
+  .today {
+    margin-top: 150px;
+  }
+  .today-menu li a p {
+    font-size: 1.2rem;
+  }
+  .fa-check {
+    font-size: 50px;
+    bottom: 50%;
+    left: 31%;
+  }
+  .today-bt {
+    margin-top: 80px;
+  }
+  .today-bt button {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+  /* 할인 */
+  .sale .inner {
+    padding: 50px 0;
+  }
+  .sale-left p {
+    font-size: 1.1rem;
+  }
+  .sale-left .swiper-pagination {
+    bottom: 14px;
+    left: -32px;
+    font-size: 1.1rem;
+  }
+  .swiper-button-prev .fas {
+    font-size: 1.3rem;
+    bottom: -150px;
+    left: -5px;
+  }
+  .swiper-button-next .fas {
+    font-size: 1.3rem;
+    bottom: -150px;
+    left: -50px;
+  }
+  .sw-sale {
+    width: 60%;
+  }
+  .sw-sale .swiper-wrapper .swiper-slide {
+    width: calc(100% / 2);
+  }
+  .sale-txt h2 {
+    font-size: 1.15rem;
+  }
+  .sale-price p:nth-child(1) {
+    font-size: 1rem;
+  }
+  .sale-price p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .sale-price p:nth-child(3) {
+    font-size: 0.8rem;
+  }
+  /* 베스트 */
+  .best {
+    margin-top: 150px;
+  }
+  .best-button {
+    margin-bottom: 20px;
+  }
+  .best-button li a {
+    font-size: 14px;
+    width: 90px;
+    height: 28px;
+  }
+  .best-img img:first-child {
+    max-width: 160px;
+    max-height: 160px;
+  }
+  .best-img img:last-child {
+    right: 22px;
+    width: 23px;
+    height: 23px;
+  }
+  .best-fruits li h3 {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+  .best-price {
+    margin-left: 0;
+  }
+  .best-price p:nth-child(1) {
+    font-size: 0.5rem;
+  }
+  .best-price p:nth-child(2) {
+    font-size: 0.8rem;
+    margin-left: 2px;
+  }
+  .best-new {
+    margin-left: 5px;
+    font-size: 0.4rem;
+    width: 25px;
+    height: 15px;
+  }
+  .best-recommend {
+    margin-left: 5px;
+    font-size: 0.4rem;
+    width: 25px;
+    height: 15px;
+  }
+  .best-more {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 70px;
+  }
+  /* 제철과일 */
+  .new {
+    margin-top: 150px;
+  }
+  .new-img img:last-child {
+    width: 23px;
+    height: 23px;
+    top: 4px;
+  }
+  .new-fruits li h3 {
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+  .new-price {
+    margin-left: 0;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .new-price p:nth-child(1) {
+    font-size: 0.8rem;
+  }
+  .new-price p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+  .new-price p:nth-child(3) {
+    font-size: 0.5rem;
+  }
+  .new-more {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin: 0 auto;
+  }
+  /* 생생 후기 */
+  .reviewpage {
+    height: 940px;
+    margin-top: 150px;
+  }
+  .review-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .review-list li {
+    margin-bottom: 20px;
+  }
+  .review {
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+  }
+  .review img {
+    width: 30%;
+    height: 100%;
+    padding: 0;
+  }
+  .review-right {
+    width: 50%;
+    padding: 0 30px;
+  }
+  .star {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  .review-right .id {
+    margin-top: 10px;
+  }
+  .review-more {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin: 50px auto;
+  }
+  /* 브랜드스토리 */
+  .brand_story {
+    background: url("../images/banner-brand2.jpg") no-repeat center center;
+    width: 100%;
+    height: 250px;
+    margin-top: 150px;
+  }
+  .brand_story p a {
+    bottom: 15px;
+    left: 43%;
+    font-size: 12px;
+    width: 95px;
+    line-height: 20px;
+  }
+  /* 푸터 */
+  .ft-left img {
+    max-width: 150px;
+  }
+  .ft-right-top li a {
+    font-size: 12px;
+    padding: 15px;
+  }
+  .ft-right-bottom h4 {
+    font-size: 1.5rem;
+  }
+  .ft-right-bottom span {
+    font-size: 2.5rem;
+  }
+  .ft-right-bottom p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* 생생 후기 */
+  .review-right {
+    width: 70%;
+    padding: 5px 20px;
+  }
+  .review-right h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  /* 생생 후기 */
+  .review:nth-child(2) {
+    display: none;
+  }
+  .review img {
+    width: 40%;
+  }
+  .review-right {
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* 고정 아이콘 */
+  .icon {
+    right: 10px;
+    gap: 7px;
+  }
+  .icon li {
+    width: 30px;
+    height: 30px;
+  }
+  .icon li i {
+    font-size: 18px;
+  }
+  /* 헤더 아이콘 */
+  .header-top {
+    margin-top: 15px;
+  }
+  .header-menu-icon {
+    width: 100px;
+    gap: 11px;
+  }
+  .header-menu-icon img {
+    width: 11px;
+    height: 11px;
+  }
+  /* 헤더 */
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  header {
+    width: 100%;
+    max-width: 320px;
+  }
+  .header-logo a img {
+    max-width: 120px;
+  }
+  .header-bottom {
+    margin: 18px 0 0 0;
+    height: 20px;
+  }
+  .main-menu {
+    font-family: "TheJamsil1Thin";
+    font-size: 0.42rem;
+  }
+  .fa-bars {
+    margin-right: 5px;
+  }
+  /* 배너 */
+  .banner {
+    /* margin-top: 135px; */
+  }
+  .banner .swiper-pagination span {
+    width: 3px;
+    height: 3px;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: -6px var(--swiper-pagination-bullet-horizontal-gap, 2px);
+  }
+  /* 오늘의 도시락 */
+  .today {
+    margin-top: 50px;
+  }
+  .today-menu {
+    margin: 20px auto;
+  }
+  .today-menu li a p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .fa-check {
+    font-size: 25px;
+    bottom: 50%;
+    left: 30%;
+  }
+  .today-bt {
+    margin-top: 50px;
+  }
+  .today-bt button {
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 2px solid;
+  }
+  /* 할인 */
+  .sale {
+    margin-top: 50px;
+  }
+  .sale .inner {
+    padding: 20px 0;
+    flex-direction: column;
+  }
+  .sale-left {
+    width: 100%;
+    /* display: flex; */
+  }
+  .sale-left h1 {
+    margin: 0;
+    line-height: 25px;
+  }
+  .sale-left hr {
+    display: none;
+  }
+  .sale-br {
+    display: none;
+  }
+  .sale-left p {
+    margin-top: 5px;
+    font-size: 0.7rem;
+    line-height: 17px;
+  }
+  .sale-left .swiper-pagination {
+    bottom: -246px;
+    left: 0px;
+    font-size: 0.6rem;
+  }
+  .swiper-button-prev .fas {
+    font-size: 0.7rem;
+    bottom: -247px;
+    left: 90px;
+  }
+  .swiper-button-next .fas {
+    font-size: 0.7rem;
+    bottom: -247px;
+    left: -73px;
+  }
+  .sw-sale {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .sw-sale .swiper-wrapper .swiper-slide {
+    width: calc(100% / 2);
+    height: 80%;
+  }
+  .sale-txt {
+    padding: 15px 10px;
+  }
+  .sale-price {
+    margin-top: 8px;
+  }
+  .sale-txt h2 {
+    font-size: 0.85rem;
+  }
+  .sale-price p:nth-child(1) {
+    font-size: 0.8rem;
+  }
+  .sale-price p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+  .sale-price p:nth-child(3) {
+    font-size: 0.5rem;
+  }
+  /* 베스트 */
+  .best {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 100px;
+  }
+  .best h1 {
+    margin-bottom: 10px;
+  }
+  .best-button {
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  .best-button li a {
+    width: 45px;
+    height: 15px;
+    font-size: 0.4rem;
+    border: 1px solid;
+  }
+  .best-button li:first-child a {
+    border: 1px solid;
+  }
+  .best-fruits {
+    gap: 5px;
+  }
+  .best-fruits li {
+    width: calc(100% / 2 - 5px);
+    margin-bottom: 10px;
+  }
+  .best-fruits li:last-child {
+    display: none;
+  }
+  .best-img img:first-child {
+    width: 100%;
+  }
+  .best-img img:last-child {
+    width: 10px;
+    height: 10px;
+    right: 2px;
+    top: 2px;
+  }
+  .best-fruits li h3 {
+    font-size: 0.68rem;
+  }
+  .best-price p:nth-child(1) {
+    font-size: 0.4rem;
+  }
+  .best-price p:nth-child(2) {
+    font-size: 0.58rem;
+    margin-left: 5px;
+  }
+  .best-new {
+    font-size: 0.4rem;
+    margin-left: 5px;
+    width: 20px;
+    height: 10px;
+    border-radius: 2px;
+  }
+  .best-recommend {
+    font-size: 0.4rem;
+    margin-left: 5px;
+    width: 20px;
+    height: 10px;
+    border-radius: 2px;
+  }
+  .best-more {
+    width: 80px;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 2px solid;
+    margin: 30px auto 0;
+  }
+  /* new */
+  .new {
+    width: 100%;
+    max-width: 320px;
+    margin-top: 100px;
+  }
+  .new-fruits {
+    gap: 5px;
+  }
+  .new-fruits li {
+    width: calc(100% / 3 - 5px);
+    margin-bottom: 10px;
+  }
+  .new-fruits li:last-child {
+    display: none;
+  }
+  .new-img img:first-child {
+    width: 100%;
+  }
+  .new-img img:last-child {
+    width: 10px;
+    height: 10px;
+    right: 2px;
+    top: 2px;
+  }
+  .new-fruits li h3 {
+    font-size: 0.68rem;
+    margin: 5px 0 0 3px;
+  }
+  .new-price {
+    margin-left: 3px;
+    margin-top: 5px;
+    gap: 5px;
+  }
+  .new-price p:nth-child(1) {
+    font-size: 0.58rem;
+  }
+  .new-price p:nth-child(2) {
+    font-size: 0.35rem;
+  }
+  .new-price p:nth-child(3) {
+    font-size: 0.58rem;
+  }
+  .new-more {
+    width: 80px;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 2px solid;
+    margin: 30px auto 0;
+  }
+  /* 생생 후기 */
+  .reviewpage {
+    height: 380px;
+    margin-top: 100px;
+  }
+  .reviewpage h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .review-list li {
+    margin-bottom: 10px;
+  }
+  .review-list h2 {
+    font-size: 0.9rem;
+  }
+  .review {
+    height: 100px;
+    padding: 15px;
+  }
+  .review-right {
+    width: 80%;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .star {
+    font-size: 0.7rem;
+    margin: 5px 0;
+  }
+  .review-right span {
+    font-size: 0.75rem;
+  }
+  .review-right .id {
+    margin-top: 5px;
+  }
+  .review-more {
+    width: 80px;
+    height: 35px;
+    font-size: 13px;
+    border-radius: 15px;
+    border: 2px solid;
+    margin: 30px auto 0;
+  }
+  /* 브랜드 스토리 */
+  .brand_story {
+    background: url("../images/banner-brand3.jpg") no-repeat center center;
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+  }
+  .brand_story p a {
+    left: 41%;
+    font-size: 8px;
+    width: 60px;
+    line-height: 14px;
+    border-radius: 6px;
+  }
+  /* 푸터 */
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 100px;
+  }
+  .ft-left {
+    width: 100%;
+  }
+  .ft-left img {
+    max-width: 80px;
+    margin: 20px auto;
+  }
+  .ft-right-top {
+    justify-content: center;
+    height: 30px;
+  }
+  .ft-right-top li a {
+    font-size: 0.55rem;
+    padding: 8px;
+  }
+  .ft-right-bottom {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .ft-right-bottom h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  .ft-right-bottom span {
+    font-size: 1.5rem;
+  }
+  .ft-right-bottom p {
+    font-size: 0.6rem;
+  }
+  .ft-right-bottom span svg {
+    width: 20px;
+    height: 16px;
+  }
+}
+
+/* 상세페이지 */
+@media screen and (max-width: 850px) {
+  /* 상세페이지 */
+  .menu-right li h2 {
+    color: #707070;
+    font-size: 20px;
+    width: 100px;
+  }
+  .menu-right-info li b {
+    /* position: absolute;
+    right: 100px; */
+    color: #222;
+    font-weight: 600;
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* 상세페이지 */
+  .detail-pg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 40px;
+  }
+  .detail-manu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .orange {
+    width: 80%;
+    margin: auto;
+  }
+  .menu-right {
+    width: 80%;
+    margin: auto;
+  }
+  .menu-right li h2 {
+    font-size: 18px;
+    width: 130px;
+  }
+  .menu-right-info li b {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 470px) {
+  /* 싱세페이지 */
+  .menu-right h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .menu-right li h2 {
+    font-size: 14px;
+    width: 110px;
+  }
+  .menu-right-info li b {
+    font-weight: 600;
+    font-size: 13px;
+  }
+}

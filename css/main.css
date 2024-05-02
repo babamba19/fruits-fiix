@@ -1,0 +1,789 @@
+@charset "utf-8";
+@import url("font.css");
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* 공통 */
+.inner {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "TheJamsil5Bold";
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #222;
+}
+.wrap {
+  position: relative;
+}
+.scroll-to-top{
+  display: none;
+}
+/* top 버튼 */
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  z-index: 9999;
+}
+.icon li {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36);
+  cursor: pointer;
+}
+.icon li i {
+  font-size: 28px;
+  color: #555;
+}
+.fa-arrow-up{
+  transform: rotate(-180deg);
+  transition: transform 0.3s ease;
+}
+.up {
+  transform: rotate(1deg); /* 원하는 각도로 회전시킵니다. */
+  transition: transform 0.3s ease; /* 회전 효과에 애니메이션을 추가합니다. */
+}
+/* 모달 팝업 */
+.popup-wrap {
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: 9999999999;
+}
+.popup-body img {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.popup-foot {
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 1.5;
+  text-decoration: underline;
+
+}
+/* 태훈 */
+/* header */
+header {
+  width: 100%;
+  /* height: 200px; */
+  /* position: fixed; */
+  display: block;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  /* z-index: 99999; */
+}
+.header-top {
+  width: 100%;
+  /* height: 200px; */
+  /* background-color: aqua; */
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.header-search {
+  width: 250px;
+  height: 40px;
+  position: relative;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  /* border: 3px solid #e7e7e7; */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+}
+.search-text {
+  max-height: 20px;
+  width: 170px;
+  border: none;
+  /* border-bottom: 1px solid #d9d9d9; */
+  outline: none;
+  font-size: 14px;
+  font-family: "TheJamsil2Light";
+  /* font-style: italic; */
+  text-align: center;
+  /* background-color: aqua; */
+}
+.header-search img {
+  width: 25px;
+  height: 25px;
+  /* position: absolute; */
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+.header-logo a img {
+  max-width: 300px;
+  /* max-height: 100px; */
+  margin: 0 auto;
+  display: block;
+}
+.header-menu-icon {
+  /* position: relative; */
+  display: flex;
+  width: 200px;
+  justify-content: flex-end;
+  cursor: pointer;
+  gap: 35px;
+}
+.search {
+  display: none;
+}
+.header-menu-icon img {
+  width: 25px;
+  height: 25px;
+}
+.header-bottom {
+  width: 100%;
+  height: 80px;
+  /* height: 100px; */
+  background-color: rgb(0, 107, 0);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  z-index: 999999;
+  margin-top: 20px;
+}
+.main-menu {
+  width: 100%;
+  max-width: 1200px;
+  /* height: 100%; */
+  font-family: "TheJamsil2Light";
+  /* position: relative; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  /* line-height: 22px; */
+  /* color: #333; */
+  /* margin: 0 auto; */
+  /* margin: 20px; */
+}
+.main-menu li a {
+  color: #eee;
+}
+.fa-bars {
+  margin-right: 10px;
+}
+/* 이미지 슬라이드 */
+.banner {
+  /* position: relative; */
+  width: 100%;
+  /* height: 100%; */
+  /* max-height: 600px; */
+  text-align: center;
+  display: flex;
+  /* margin-top: 100px; */
+}
+.banner.swiper-slide {
+  /* top: 600px; */
+  width: 100%;
+  height: 100%;
+}
+.banner-1 {
+  width: 100%;
+  /* max-height: 600px; */
+}
+.banner-2 {
+  display: none;
+}
+:root {
+  --swiper-theme-color: rgb(0, 107, 0);
+}
+/* 오늘의 도시락 */
+.today {
+  width: 100%;
+  /* height: 600px; */
+  margin-top: 200px;
+  /* background-color: bisque; */
+}
+.today-menu {
+  font-family: "Noto Sans KR", sans-serif;
+  /* width: 200; */
+  /* height: 220px; */
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  /* line-height: 40px; */
+  gap: 2%;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.today-menu li {
+  /* width: 200px;
+  height: 200px; */
+  /* width: calc(100% / 5); */
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 200px;
+  position: relative;
+}
+.today-menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.today-menu li a img {
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 8px rgba(70, 70, 70, 0.13);
+  border-radius: 50%;
+}
+.fa-check {
+  opacity: 0;
+  position: absolute;
+  bottom: 37%;
+  left: 38%;
+  font-size: 60px;
+  color: #f1f1f1;
+}
+.today-menu li:hover i {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.today-menu li:hover a img {
+  filter: opacity(0.8) brightness(0.6);
+  transition: 0.5s;
+}
+.today-menu li a p {
+  /* line-height: 40px; */
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #222;
+}
+.today-bt {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  margin-top: 130px;
+  gap: 30px;
+}
+.today-bt button {
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  font-family: "TheJamsil3Regular";
+  /* background-color: #fff; */
+  border-radius: 20px;
+  border: 3px solid #444;
+  margin: 0px 15px;
+  cursor: pointer;
+  /* color: #444; */
+  gap: 30px;
+}
+.today-bt-left {
+  background-color: #444;
+  color: #fff;
+}
+.today-bt-right {
+  background-color: #fff;
+  color: #444;
+}
+
+/* 지원 */
+/* 할인 */
+.sale {
+  margin-top: 200px;
+  width: 100%;
+  /* height: 500px; */
+  background-color: rgb(255, 247, 233);
+}
+.sale .inner {
+  max-width: 1200px;
+  padding: 50px 0;
+  display: flex;
+  /* height: 80%; */
+}
+.sale-left {
+  width: 30%;
+  position: relative;
+  /* max-width: 300px; */
+  /* height: 70%; */
+}
+.sale-left hr {
+  width: 30px;
+  height: 4px;
+  border: 1px solid #444;
+  background-color: #444;
+  margin: 20px 0;
+}
+.sale-left p {
+  font-family: "TheJamsil2Light";
+  color: #444;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+.sale-left .swiper-pagination {
+  font-family: "TheJamsil4Medium";
+  position: absolute;
+  bottom: 50px;
+  left: -75px;
+  font-size: 1.3rem;
+}
+.sale-left .swiper-pagination-current {
+  color: #444;
+}
+.sale-left .swiper-pagination-horizontal,
+.sale-left .swiper-pagination-total {
+  color: #666;
+}
+.swiper-button-prev .fas {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -150px;
+  left: -5px;
+}
+.swiper-button-next .fas {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: -150px;
+  left: -140px;
+}
+.sw-sale {
+  margin-top: 20px;
+  width: 70%;
+}
+.sw-sale .swiper-wrapper .swiper-slide {
+  width: calc(100% / 3);
+  height: 95%;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sw-sale .swiper-wrapper .swiper-slide a {
+  width: 100%;
+  height: 100%;
+}
+.sw-sale .swiper-wrapper .swiper-slide a img {
+  width: 100%;
+}
+.sale-txt {
+  width: 100%;
+  padding: 50px 20px;
+}
+.sale-txt h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* text-align: center; */
+}
+.sale-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 10px; */
+  margin-top: 10px;
+}
+.sale-price p:nth-child(1) {
+  color: rgb(255, 95, 67);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.sale-price p:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+.sale-price p:nth-child(3) {
+  color: rgb(100, 100, 100);
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+/* 베스트 */
+.best {
+  margin-top: 200px;
+  width: 100%;
+}
+.best-button {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.best-button li a {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  color: rgb(0, 107, 0);
+  border: 2px solid rgb(0, 107, 0);
+  background-color: #fff;
+  border-radius: 30px;
+  width: 100px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+.best-button li:first-child a {
+  /* filter: brightness(0.1); */
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 107, 0);
+  background-color: rgb(0, 107, 0);
+}
+.best-fruits {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.best-fruits li {
+  width: calc(100% / 5 - 20px);
+  position: relative;
+}
+.best-img img:first-child {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+.best-img img:last-child {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+}
+.best-fruits li h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0 10px 10px;
+  color: #222;
+}
+.best-price {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.best-price p:nth-child(1) {
+  color: rgb(100, 100, 100);
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+.best-price p:nth-child(2) {
+  margin-left: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+}
+.best-new {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 188, 0);
+  width: 45px;
+  height: 22px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+  margin-left: 10px;
+}
+.best-recommend {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 172, 37);
+  width: 45px;
+  height: 22px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+  margin-left: 10px;
+}
+.best-more {
+  font-family: "TheJamsil3Regular";
+  display: block;
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #222;
+  margin: 100px auto;
+}
+.new {
+  margin-top: 200px;
+}
+.new-fruits {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.new-fruits li {
+  width: calc(100% / 5 - 20px);
+  position: relative;
+  margin-bottom: 70px;
+}
+.new-img img:first-child {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  max-height: 250px;
+}
+.new-img img:last-child {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  opacity: 0.8;
+}
+.new-fruits li h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0 10px 10px;
+  color: #222;
+}
+.new-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.new-price p:nth-child(1) {
+  color: rgb(255, 95, 67);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.new-price p:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #222;
+}
+.new-price p:nth-child(3) {
+  color: rgb(100, 100, 100);
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+.new-more {
+  font-family: "TheJamsil3Regular";
+  display: block;
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 3px solid #222;
+  margin: 30px auto 0;
+}
+
+/* 생생 후기 */
+.reviewpage h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.reviewpage {
+  width: 100%;
+  height: 760px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: rgb(236, 255, 224);
+  margin-top: 200px;
+}
+.review-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.review {
+  width: calc(100% / 2 - 10px);
+  height: 50%;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  cursor: pointer;
+}
+.review img {
+  width: 40%;
+  height: 40%;
+  padding: 30px;
+}
+.review-right {
+  width: 60%;
+  padding: 30px 0;
+}
+
+.review-right h2 {
+  font-family: "TheJamsil5Bold";
+  letter-spacing: normal;
+  font-size: 1.4rem;
+  margin-top: 0px;
+  color: #222;
+}
+.star {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+.review-right span {
+  font-family: "Noto Sans KR", sans-serif;
+  display: inline-block;
+  font-weight: 500;
+  /* height: 50px; */
+  color: #222;
+}
+.review-right .id {
+  margin-top: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #808080;
+}
+.review-more {
+  font-family: "TheJamsil3Regular";
+  display: block;
+  width: 250px;
+  height: 80px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 3px solid #222;
+  margin: 100px auto;
+}
+.brand_story {
+  width: 100%;
+  height: 250px;
+  margin-top: 200px;
+  position: relative;
+  background: url("../images/banner-brand.jpg") no-repeat center center;
+}
+.brand_story p {
+  display: flex;
+  justify-content: center;
+}
+.brand_story p a {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  bottom: 30px;
+  left: 47.2%;
+  width: 110px;
+  line-height: 25px;
+  color: #c9c9c9;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #f5f5f5; */
+  border-top: 3px solid rgb(240, 240, 240);
+}
+.ft-left {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+.ft-left img {
+  width: 100%;
+}
+.ft-right {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.ft-right-top {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-top: 10px;
+}
+.ft-right-top li a {
+  color: #777;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+}
+.ft-right-bottom {
+  margin: 50px 0;
+  margin-right: 30px;
+  text-align: right;
+}
+.ft-right-bottom h4 {
+  font-family: "TheJamsil2Light";
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000000;
+}
+.ft-right-bottom p {
+  font-family: "TheJamsil1Thin";
+  margin-top: 15px;
+  font-size: 14px;
+  color: #777;
+}
+
+.ft-right-bottom span {
+  font-family: "TheJamsil5Bold";
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(0, 107, 0);
+}
+.ft-right-bottom span svg {
+  width: 35px;
+  height: 35px;
+}
